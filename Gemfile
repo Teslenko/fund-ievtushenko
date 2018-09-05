@@ -23,12 +23,12 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 group :production do
   gem 'pg', '~> 0.21.0'
-  
+
   gem 'rails_12factor'
 end
 
 group :development, :test do
-  gem 'sqlite3', '1.3.13'
+  gem 'sqlite3'
 
   gem 'letter_opener'
 
