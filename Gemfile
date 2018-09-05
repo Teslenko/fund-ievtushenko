@@ -45,9 +45,13 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 
   gem 'byebug'
+
+  gem 'sqlite3'
 end
 
 group :test do
+
+  gem 'sqlite3'
 
   gem 'rspec-rails'
 
