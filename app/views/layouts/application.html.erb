@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fund</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+
+  <header>
+    <div class="header">
+      <h1>My Website</h1>
+      <p>A <b>responsive</b> website created by me.</p>
+    </div>
+
+    <div class="navbar">
+      <%= link_to "HOME", root_path, class: "active" %>
+      <div class="subnav">
+        <button class="subnavbtn">ABOUT US <i class="fa fa-caret-down"></i></button>
+        <div class="subnav-content">
+          <a href="our_team">Our team</a>
+          <a href="about_found">About the found</a>
+          <a href="statutory_documents">Statutory documents</a>
+        </div>
+      </div>
+
+      <div class="subnav">
+        <button class="subnavbtn">PARTNER SUPPORT <i class="fa fa-caret-down"></i></button>
+        <div class="subnav-content">
+          <a href="our_sport_team">Our sport team</a>
+          <a href="our_patrons">Our patrons</a>
+        </div>
+      </div>
+
+      <div class="subnav">
+        <button class="subnavbtn">EVENTS <i class="fa fa-caret-down"></i></button>
+        <div class="subnav-content">
+          <a href="competitions">Competitions</a>
+          <a href="event_report">Event Report</a>
+        </div>
+      </div>
+
+      <a href="for_investors" >FOR INVESTORS</a>
+      <a href="contacts" >CONTACTS</a>
+    </div>
+  </header>
+  <%= yield %>
+<!--  <div class="footer">-->
+<!--    <h2>Footer</h2>-->
+<!--  </div>-->
+
+
+  </body>
+</html>
