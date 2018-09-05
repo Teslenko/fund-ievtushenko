@@ -23,10 +23,14 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 group :production do
   gem 'pg', '~> 0.21.0'
+  
   gem 'rails_12factor'
 end
 
 group :development, :test do
+  gem 'sqlite3', '1.3.13'
+
+  gem 'letter_opener'
 
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
@@ -44,6 +48,10 @@ group :development do
 end
 
 group :test do
+
+  gem 'rspec-rails'
+
+  gem 'factory_girl_rails'
 
   gem 'capybara', '>= 2.15'
 
