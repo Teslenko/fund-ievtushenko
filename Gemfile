@@ -21,47 +21,53 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'bootsnap', '>= 1.1.0', require: false
 
+gem 'sqlite3', :group => [:development, :test]
 group :production do
-  gem 'pg', '~> 0.21.0'
-
-  gem 'rails_12factor'
+  gem 'thin'
+  gem 'pg'
 end
 
-group :development, :test do
-  gem 'sqlite3'
-
-  gem 'letter_opener'
-
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-end
-
-group :development do
-  gem 'web-console', '>= 3.3.0'
-
-  gem 'listen', '>= 3.0.5', '< 3.2'
-
-  gem 'spring'
-
-  gem 'spring-watcher-listen', '~> 2.0.0'
-
-  gem 'byebug'
-
-  gem 'sqlite3'
-end
-
-group :test do
-
-  gem 'sqlite3'
-
-  gem 'rspec-rails'
-
-  gem 'factory_girl_rails'
-
-  gem 'capybara', '>= 2.15'
-
-  gem 'selenium-webdriver'
-
-  gem 'chromedriver-helper'
-end
+# group :production do
+#   gem 'pg', '~> 0.21.0'
+#
+#   gem 'rails_12factor'
+# end
+#
+# group :development, :test do
+#   gem 'sqlite3'
+#
+#   gem 'letter_opener'
+#
+#   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+# end
+#
+# group :development do
+#   gem 'web-console', '>= 3.3.0'
+#
+#   gem 'listen', '>= 3.0.5', '< 3.2'
+#
+#   gem 'spring'
+#
+#   gem 'spring-watcher-listen', '~> 2.0.0'
+#
+#   gem 'byebug'
+#
+#   gem 'sqlite3'
+# end
+#
+# group :test do
+#
+#   gem 'sqlite3'
+#
+#   gem 'rspec-rails'
+#
+#   gem 'factory_girl_rails'
+#
+#   gem 'capybara', '>= 2.15'
+#
+#   gem 'selenium-webdriver'
+#
+#   gem 'chromedriver-helper'
+# end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
