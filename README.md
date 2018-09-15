@@ -4,7 +4,7 @@ git init
 
 *git commit -m "first commit"
 
-*git remote add origin https://github.com/Teslenko/ievtushenko.git
+*git remote add origin https://github.com/Teslenko/fund-ievtushenko.git
 
 *git push -u origin master
 
